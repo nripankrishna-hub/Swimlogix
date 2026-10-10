@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "SwimLogix",
+    "slug": "swimlogix",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "swimlogix",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#004E64"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.swimlogix.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "SwimLogix uses the camera so you can upload your institution logo.",
+        "NSPhotoLibraryUsageDescription": "SwimLogix needs access to your photos to upload the institution logo."
+      }
+    },
+    "android": {
+      "package": "com.swimlogix.app",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "POST_NOTIFICATIONS"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#004E64"
+      }
+    },
+    "plugins": [
+      "expo-image-picker",
+      "expo-font"
+    ],
+    "extra": {
+      "//": "Point this at your deployed API. Android emulator uses 10.0.2.2 to reach the host machine.",
+      "apiBaseUrl": "http://192.168.1.104:4000/api/v1"
+    }
+  }
+}
